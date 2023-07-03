@@ -7,12 +7,12 @@ resource "aws_instance" "Frontend" {
   }
 }
 
-resource "aws_instance" "Mongo db" {
+resource "aws_instance" "Mongodb" {
   ami           = "ami-03265a0778a880afb"
   instance_type = "t3.micro"
 
   tags = {
-    Name = "Mongo db"
+    Name = "Mongodb"
   }
 }
 
